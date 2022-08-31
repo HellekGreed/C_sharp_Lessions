@@ -17,7 +17,7 @@ else if(b > a)
             a++;
     }
 }
-else if (a == 0)
+else
 {
         Console.Write(a);
 }
