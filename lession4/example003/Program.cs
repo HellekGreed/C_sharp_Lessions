@@ -1,25 +1,24 @@
-﻿void GetArray(int[] arr)
+﻿int[] GetArray()
 {
-        int length = arr.Length;
-        for(int i = 0; i < length; i++)
+        int[] array = new int[8];
+        for(int i = 0; i < 8; i++)
         {
-                arr[i] = new Random().Next(0, 2);
+                array[i] = new Random().Next(0, 2);
+        }
+        return array;
+}
+
+void PrintArray(int[] array)
+{
+        for(int  i = 0; i < array.Length; i++)
+        {
+                Console.Write($"{array[i]} ");
         }
 }
 
-void PrintArray(int[] arr)
-{
-        int length = arr.Length;
-        for(int  i = 0; i < length; i++)
-        {
-                Console.Write($"{arr[i]},");
-        }
-}
 
 
-int[] array = new int[8];
-
-GetArray(array);
+int[] array = GetArray();
 PrintArray(array);
 
 
