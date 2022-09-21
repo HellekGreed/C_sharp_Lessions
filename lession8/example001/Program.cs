@@ -19,7 +19,6 @@
     }
 
     return array;
-
 }
 
 void PrintArray(double[,] array)
